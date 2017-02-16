@@ -1,18 +1,35 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "weather-report",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theoldcounty/weatherreport"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.5.0"
+  },
   "devDependencies": {
-    "react-scripts": "0.9.0"
+    "enzyme": "^2.4.1",
+    "react-addons-test-utils": "^15.3.2",
+    "react-scripts": "0.6.1",
+    "sinon": "^1.17.6",
+    "sinon-stub-promise": "^3.0.1"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "es6-map": "^0.1.4",
+    "moment": "^2.15.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "whatwg-fetch": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start_in_test_mode": "REACT_APP_API=http://localhost:7001/responses/api react-scripts start"
   }
 }
